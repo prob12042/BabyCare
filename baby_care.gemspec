@@ -10,14 +10,14 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Displays a list of Baby Care Centers from Yelp API.}
   spec.description   = %q{CLI program that allows user to navigate through the YELP API finding a Baby care center.}
-  spec.homepage      = "https://github.com/prob12042/baby_care"
+  spec.homepage      = "https://github.com/prob12042/BabyCare"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   #spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/prob12042/baby_care"
+  spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["changelog_uri"] = "https://github.com/prob12042/baby_care"
 
   # Specify which files should be added to the gem when it is released.
