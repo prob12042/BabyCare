@@ -1,10 +1,12 @@
-require_relative 'lib/baby_care/version'
+lib = File.expand_path("lib", __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require "baby_care/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "baby_care"
   spec.version       = BabyCare::VERSION
-  spec.authors       = ["<github username>"]
-  spec.email         = ["<github email address>"]
+  spec.authors       = ["prob12402"]
+  spec.email         = ["a.gaysenko@gmail.com"]
 
   spec.summary       = %q{Displays a list of Baby Care Centers from Yelp API.}
   spec.description   = %q{CLI program that allows user to navigate through the YELP API finding a Baby care center.}
@@ -24,8 +26,12 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
   #spec.bindir        = "exe"
-  spec.executables   = ["baby_care"]
+  spec.executables   = ["baby_list"]
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "artii"
+  spec.add_dependency "http"
+  spec.add_development_dependency "bundler", "~> 2.0"
+  spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "pry"
 end

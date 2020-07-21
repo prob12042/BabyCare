@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "pry"
+require_relative "../lib/baby_care"
+
+BabyCare::CLI.new.start   
+
+#Created a new instance of the CLI Class and then call an instance method called #start on it.
+#The start method is located in the CLI Class (cli.rb file) 
+
+#This is the executable file 
+
+#The top line is called shebang 
+
+
